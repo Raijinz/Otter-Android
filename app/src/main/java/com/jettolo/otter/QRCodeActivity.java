@@ -1,5 +1,6 @@
 package com.jettolo.otter;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +31,7 @@ public class QRCodeActivity extends AppCompatActivity {
             if(result.getContents() != null) {
                 Log.d(TAG, result.getContents());
                 Intent intent = new Intent();
-                intent.putExtra("otpauth", result.getContents());
+                intent.putExtra("url", result.getContents());
                 setResult(RESULT_OK, intent);
                 finish();
             } else {

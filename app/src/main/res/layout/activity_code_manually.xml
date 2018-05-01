@@ -43,13 +43,15 @@
 
     <TextView
         android:id="@+id/mainPageTextView1"
-        android:layout_width="142dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="450dp"
         android:layout_marginTop="50dp"
-        android:text="Authenticator"
+        android:text="@string/authenticator"
+        android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,13 +73,15 @@
 
     <TextView
         android:id="@+id/tOTP"
-        android:layout_width="158dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="146dp"
         android:layout_marginEnd="113dp"
         android:layout_marginStart="113dp"
         android:layout_marginTop="110dp"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bRequest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,5 +100,15 @@
         app:layout_constraintStart_toEndOf="@+id/bRequest"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@android:drawable/stat_notify_more" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="174dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/bRequest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

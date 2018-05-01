@@ -42,11 +42,12 @@
 
     <TextView
         android:id="@+id/mainPageTextView1"
-        android:layout_width="142dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="450dp"
         android:layout_marginTop="50dp"
         android:text="Authenticator"
+        android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,6 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="31dp"
+        android:onClick="switchMode"
         android:text="Enter Code Manually"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -75,12 +77,14 @@
         android:layout_marginEnd="27dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="156dp"
+        android:onClick="accept"
         android:text="Accept"
         app:layout_constraintBottom_toTopOf="@+id/mainPageSwitchModeButton"
         app:layout_constraintEnd_toStartOf="@+id/Denied"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainPageTextView1" />
+        app:layout_constraintTop_toBottomOf="@+id/mainPageTextView1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Denied"
@@ -90,23 +94,27 @@
         android:layout_marginEnd="60dp"
         android:layout_marginStart="51dp"
         android:layout_marginTop="23dp"
+        android:onClick="denied"
         android:text="Denied"
         app:layout_constraintBottom_toTopOf="@+id/mainPageSwitchModeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Accept"
-        app:layout_constraintTop_toBottomOf="@+id/Showtext" />
+        app:layout_constraintTop_toBottomOf="@+id/Showtext"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/Showtext"
-        android:layout_width="160dp"
-        android:layout_height="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="112dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="79dp"
         android:text="KEY "
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Accept"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

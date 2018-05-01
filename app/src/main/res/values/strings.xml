@@ -6,4 +6,11 @@
     <string name="error_occured_qrcode">An error occurred while trying to read the QRCode. Do you want to try again?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="url">http://161.246.5.8/</string>
+    <string name="switchmode">Switch Mode</string>
+    <string name="enter_code_manually">Enter Code Manually</string>
+    <string name="authenticator">Authenticator</string>
+    <string name="refer_code">Refer Code:</string>
+    <string name="deny">Deny</string>
+    <string name="accept">Accept</string>
 </resources>
